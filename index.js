@@ -15,20 +15,29 @@ function flipCoin () {
         }
     }
 
+    var clickButton = document.getElementById("Click");
+        
+    var headImage = document.getElementById("Himage")
+    var tailImage = document.getElementById("Timage")
+
+
     // This is the flipCoin function in JS
-    function drawHeads() {
-        console.log("headimage");
+    function drawHeads(imageOfHeads) {
+        tailImage.style.display = "none"
+        headImage.style.display = "block"
     }
 
-    //
+        
+    // based on clicking of flipcoin, and it being 0 i want the heads image to come 
 
-    function drawTails() {
-        console.log("tailimage");
+    function drawTails(imageofTails) {
+        headImage.style.display = "none"
+        tailImage.style.display = "block"
     }
 
-    function printMessage() {
-        //print winning message 
-    }
+    // function printMessage() {
+    //     //print winning message 
+    // }
 
    
 
