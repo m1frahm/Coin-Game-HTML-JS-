@@ -9,9 +9,11 @@ function flipCoin () {
         console.log(flip);
         if (flip === 0)
         {
-            drawHeads() && winHeads();
+            drawHeads();
+            winHeads();
         } else {
             drawTails();
+            winTails();
         }
     }
 
@@ -39,6 +41,13 @@ function flipCoin () {
         headMsg.style.display = "block"
         tailMsg.style.display = "none"
     }
+
+    // if person gets a tail image than print tail msg
+    function winHeads(tailWinning) {
+        tailMsg.style.display = "block"
+        headMsg.style.display = "none"
+    }
+   
    
 
 
