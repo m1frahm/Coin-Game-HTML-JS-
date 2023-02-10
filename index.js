@@ -36,7 +36,8 @@ function flipCoin () {
     }
 
     function printMessage() {
-        document.getElementById("WinMessage").innerHTML = "The Winner is ____"
+        document.getElementById("WinMessageHeads").innerHTML = "The Winner is HEADS" || 
+        document.getElementById("WinMessageTails").innerHTML = "The Winner is TAILS";
     }
 
    
