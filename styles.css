@@ -40,4 +40,7 @@ b {
 img {
     margin-left: auto; margin-right: auto;
 }
- 
+
+.buttonSize {
+    text-align: center;
+}
