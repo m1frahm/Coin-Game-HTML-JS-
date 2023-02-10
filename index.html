@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Coin Game</title>
 </head>
 
@@ -11,20 +12,29 @@
     <h1>COIN FLIP GAME</h1>
 
     <div>
-    <img style="display: none" id="Himage" src="Heads.png">   
+        <img 
+            style="display: none" 
+            id="Himage" 
+            src="Heads.png">   
     </div>
 
     <div>
-        <img style="display: none" id="Timage" src="Tails.png">
+        <img 
+            style="display: none" 
+            id="Timage" 
+            src="Tails.png">
     </div>
 
     <br>
-    <button id="Click" onClick="flipCoin()">Click Here to Flip Coin</button>
+        <button 
+            id="Click" 
+            onClick="flipCoin()">Click Here to Flip Coin
+        </button>
     
 
         <div>
             <P 
-            id="WinMessageHeads">
+            class="WinMessageHeads">
                 <h4 style="display: none">
                     The Winner is HEADS!
                 </h4>

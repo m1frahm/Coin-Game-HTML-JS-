@@ -9,7 +9,7 @@ function flipCoin () {
         console.log(flip);
         if (flip === 0)
         {
-            drawHeads() || document.getElementById("WinMessageHeads").innerHTML;
+            drawHeads() && winHeads();
         } else {
             drawTails();
         }
@@ -31,14 +31,14 @@ function flipCoin () {
         tailImage.style.display = "block"
     }
 
-    // function printMessage() {
-    //     if drawHeads() {
-    //         document.getElementById("WinMessageHeads").innerHTML;
-    //     } else {
-    //         document.getElementById("WinMessageTails").innerHTML;
-    //     }
-    // }
+    var headMsg = document.getElementsById("WinMessageHeads"); // refers to win message in h4 tag for heads
+    var tailMsg = document.getElementById("WinMessageTails"); // refers to win message in h4 tag for tails
 
+    // if person gets a head image than print heads msg
+    function winHeads(headWinning) {
+        headMsg.style.display = "block"
+        tailMsg.style.display = "none"
+    }
    
 
 
