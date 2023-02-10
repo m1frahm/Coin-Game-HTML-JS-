@@ -9,36 +9,35 @@ function flipCoin () {
         console.log(flip);
         if (flip === 0)
         {
-            drawHeads();
+            drawHeads() || document.getElementById("WinMessageHeads").innerHTML;
         } else {
             drawTails();
         }
     }
 
     var clickButton = document.getElementById("Click");
-        
     var headImage = document.getElementById("Himage")
     var tailImage = document.getElementById("Timage")
 
-
-    // This is the flipCoin function in JS
+    // if the person clicks on image (result 0) and heads come then show heads image and hide tails image
     function drawHeads(imageOfHeads) {
         tailImage.style.display = "none"
         headImage.style.display = "block"
     }
-
-        
-    // based on clicking of flipcoin, and it being 0 i want the heads image to come 
-
+  
+    // if the person clicks on image (result 0) and tails come then show tails image and hide heads image
     function drawTails(imageofTails) {
         headImage.style.display = "none"
         tailImage.style.display = "block"
     }
 
-    function printMessage() {
-        document.getElementById("WinMessageHeads").innerHTML = "The Winner is HEADS" || 
-        document.getElementById("WinMessageTails").innerHTML = "The Winner is TAILS";
-    }
+    // function printMessage() {
+    //     if drawHeads() {
+    //         document.getElementById("WinMessageHeads").innerHTML;
+    //     } else {
+    //         document.getElementById("WinMessageTails").innerHTML;
+    //     }
+    // }
 
    
 
