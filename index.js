@@ -35,9 +35,9 @@ function flipCoin () {
         tailImage.style.display = "block"
     }
 
-    // function printMessage() {
-    //     //print winning message 
-    // }
+    function printMessage() {
+        document.getElementById("WinMessage").innerHTML = "The Winner is ____"
+    }
 
    
 
