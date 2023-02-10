@@ -22,28 +22,28 @@ function flipCoin () {
     var tailImage = document.getElementById("Timage")
 
     // if the person clicks on image (result 0) and heads come then show heads image and hide tails image
-    function drawHeads(imageOfHeads) {
-        tailImage.style.display = "none"
-        headImage.style.display = "block"
+    function drawHeads() {
+        tailImage.style.display = "none" // none hides
+        headImage.style.display = "block" // block visible
     }
   
     // if the person clicks on image (result 0) and tails come then show tails image and hide heads image
-    function drawTails(imageofTails) {
+    function drawTails() {
         headImage.style.display = "none"
         tailImage.style.display = "block"
     }
 
-    var headMsg = document.getElementsById("WinMessageHeads"); // refers to win message in h4 tag for heads
+    var headMsg = document.getElementById("WinMessageHeads"); // refers to win message in h4 tag for heads
     var tailMsg = document.getElementById("WinMessageTails"); // refers to win message in h4 tag for tails
 
     // if person gets a head image than print heads msg
-    function winHeads(headWinning) {
+    function winHeads() {
         headMsg.style.display = "block"
         tailMsg.style.display = "none"
     }
 
     // if person gets a tail image than print tail msg
-    function winHeads(tailWinning) {
+    function winTails() {
         tailMsg.style.display = "block"
         headMsg.style.display = "none"
     }
